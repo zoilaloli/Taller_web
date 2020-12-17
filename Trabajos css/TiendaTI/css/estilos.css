@@ -1,0 +1,268 @@
+body{
+ font-family: 'Open Sans', sans-serif;
+    
+}
+.contenedor{
+    width: 80%;
+    margin: 0 auto;
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(5,auto);
+    grid-template-areas: "header header header"
+                          "Inicio Servicio Contacto"
+                          "producto-1 producto-2 oferta-1"
+                          "producto-3 producto-4 oferta-2"
+                          "footer footer footer";
+}
+
+header{
+    grid-area: header;
+    height:200px;
+    background:red;
+    color:#ffff;
+    display:flex;
+    flex-wrap: now-rap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+header h2{
+    font-size:40px;
+    margin-bottom: 0;
+}
+header h3{
+    font-size: 80px;
+    margin-top: 0;
+    font-weight: 800;
+}
+
+.Inicio{
+    grid-area: Inicio;
+    background: #272A37;
+    padding: 30px;
+}
+.Servicio{
+    grid-area:Servicio;
+    background: #272A37;
+    padding: 30px;
+}
+.Contacto{
+    grid-area: Contacto;
+    background: #272A37;
+    padding: 30px;
+}
+.Inicio a, .Servicio a, .Contacto a{
+    display:block;
+    text-align: center;
+    color:#ffff;
+    text-decoration: none;
+
+}
+    
+/*PRODUCTO 1*/
+.prod-1{
+    grid-area: producto-1;
+    padding: 40px;
+
+}
+.prod-1 img{
+    width:100%;
+}
+.prod-1 .Descripcion{
+    font-size: 16px;
+    font-weight:800 ;
+    text-align:center ;
+    margin-top:5px ;
+    margin-bottom:10 px;
+}
+.prod-1 .Nuevo{
+    background: #ff0022;
+    color:#fff;
+   
+    margin:0;
+    padding:5px 10px;
+   text-align: center;
+}
+.prod-1 .Antes{
+    color:#504F4E ;
+    margin:5px 0;
+    text-decoration: underline;
+    
+}
+.prod-1 .Ahora{
+    color:#504F4E ;
+    margin:0;
+    text-decoration: underline;
+    text-align: right;
+}
+.prod-1 .Precio{
+    color:#ff0022;
+    text-align: right;
+    font-size: 24px;
+    font-weight: 800;
+    margin: 0;
+}
+/*PRODUCTO 2*/
+.prod-2{
+    grid-area: producto-2;
+    padding: 40px;
+
+}
+.prod-2 img{
+    width:100%;
+}
+.prod-2 .Descripcion{
+    font-size: 16px;
+    font-weight:800 ;
+    text-align:center ;
+    margin-top:5px ;
+    margin-bottom:10 px;
+}
+.prod-2 .Nuevo{
+    background: #ff0022;
+    color:#fff;
+   
+    margin:0;
+    padding:5px 10px;
+   text-align: center;
+}
+.prod-2 .Antes{
+    color:#504F4E ;
+    margin:5px 0;
+    text-decoration: underline;
+    
+}
+.prod-2 .Ahora{
+    color:#504F4E ;
+    margin:0;
+    text-decoration: underline;
+    text-align: right;
+}
+.prod-2 .Precio{
+    color:#ff0022;
+    text-align: right;
+    font-size: 24px;
+    font-weight: 800;
+    margin: 0;
+}
+.prod-2{
+    grid-area: producto-2;
+
+}
+/*PRODUCTO 3*/
+.prod-3{
+    grid-area: producto-3;
+    padding: 40px;
+
+}
+.prod-3 img{
+    width:100%;
+}
+.prod-3 .Descripcion{
+    font-size: 16px;
+    font-weight:800 ;
+    text-align:center ;
+    margin-top:5px ;
+    margin-bottom:10 px;
+}
+.prod-3 .Nuevo{
+    background: #ff0022;
+    color:#fff;
+   
+    margin:0;
+    padding:5px 10px;
+   text-align: center;
+}
+.prod-3 .Antes{
+    color:#504F4E ;
+    margin:5px 0;
+    text-decoration: underline;
+    
+}
+.prod-3 .Ahora{
+    color:#504F4E ;
+    margin:0;
+    text-decoration: underline;
+    text-align: right;
+}
+.prod-3 .Precio{
+    color:#ff0022;
+    text-align: right;
+    font-size: 24px;
+    font-weight: 800;
+    margin: 0;
+}
+/*PRODUCTO 4*/
+
+.prod-4{
+    grid-area: producto-4;
+    padding: 40px;
+
+}
+.prod-4 img{
+    width:100%;
+}
+.prod-4 .Descripcion{
+    font-size: 16px;
+    font-weight:800 ;
+    text-align:center ;
+    margin-top:5px ;
+    margin-bottom:10 px;
+}
+.prod-4 .Nuevo{
+    background: #ff0022;
+    color:#fff;
+   
+    margin:0;
+    padding:5px 10px;
+   text-align: center;
+}
+.prod-4 .Antes{
+    color:#504F4E ;
+    margin:5px 0;
+    text-decoration: underline;
+    
+}
+.prod-4 .Ahora{
+    color:#504F4E ;
+    margin:0;
+    text-decoration: underline;
+    text-align: right;
+}
+.prod-4 .Precio{
+    color:#ff0022;
+    text-align: right;
+    font-size: 24px;
+    font-weight: 800;
+    margin: 0;
+}
+
+
+/*OFERTAS*/
+.oferta-1{
+    grid-area: oferta-1;
+    background: #ffa533;
+    display:flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+}
+.oferta-2{
+    grid-area: oferta-2;
+    background: #ffa533;
+    display:flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+}
+footer{
+    grid-area: footer;
+    background:  #061F7C ;
+    padding:20px;
+    color:#fff;
+    text-align: center;
+}

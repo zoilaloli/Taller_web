@@ -1,0 +1,82 @@
+body{
+    background: #cccccc;
+    font-family: tahoma;
+}
+
+h2{
+    font-size: 30px;
+    text-align: center;
+}
+
+.contenedor{
+    width: 70%;
+    border: 5px solid #000000;
+    margin: 0 auto;
+    /*-SINTAXIS-*/
+    display: grid;/*DEFINIR UN SISTEMA DE REJILLAS*/
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(4,auto);
+    grid-template-areas: "header header header"
+                          "dos tres cinco"
+                          "dos cuatro cinco"
+                          "footer footer footer";
+}
+
+
+/*ELEMENTOS HIJOS*/
+header{
+    grid-area: header;
+    font-size: 30px;
+    text-align: center;
+    padding: 20px;
+    color:#fff;
+    background: #ff8000;
+    margin:10px;
+
+}
+
+.dos{
+    grid-area: dos;
+    font-size: 30px;
+    text-align: center;
+    padding: 20px;
+    color:#fff;
+    background: #A2A20C ;
+    margin:10px;
+}
+.tres{
+    grid-area: tres;
+    font-size: 30px;
+    text-align: center;
+    padding: 20px;
+    color:#000;
+    background: #ffff;
+    margin:10px;
+}
+.cuatro{
+    grid-area: cuatro;
+    font-size: 30px;
+    text-align: center;
+    padding: 20px;
+    color:#fff;
+    background: #ff8000;
+    margin:10px;
+}
+.cinco{
+    grid-area: cinco;
+    font-size: 30px;
+    text-align: center;
+    padding: 20px;
+    color:#fff;
+    background:#A2A20C ;
+    margin:10px;
+}
+footer{
+    grid-area: footer;
+    font-size: 30px;
+    text-align: center;
+    padding: 20px;
+    color:#fff;
+    background: #0D2D51;
+    margin:10px;
+}

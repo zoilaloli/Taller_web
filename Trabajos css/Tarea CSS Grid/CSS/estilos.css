@@ -1,0 +1,80 @@
+body{
+    background: #cccccc;
+    font-family: tahoma;
+}
+h2{
+    font-size: 35px;
+    text-align: center;
+}
+
+.contenedor{
+    width:80%;
+    border:5px solid #000000;
+    margin: 0 auto;
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(4,auto);
+    grid-template-areas:"HEADER HEADER HEADER"
+                        "CONTENIDO CONTENIDO SIDEBAR"
+                        "WIDGETI1 WIDGETI SIDEBAR"
+                        "FOOTER FOOTER FOOTER" ;
+}
+
+HEADER{
+    grid-area:HEADER  ;
+    font-size: 25px;
+    padding: 20px;
+    color:#fff;
+    background:#0D2D51 ;
+    margin: 10px;
+
+}
+
+.CONTENIDO{
+    grid-area:CONTENIDO;
+    font-size: 15px;
+    text-align: center;
+    padding: 20px;
+    color:#000000;
+    background:#fff ;
+    margin: 10px;
+}
+
+.SIDEBAR{
+    grid-area:SIDEBAR;
+    font-size: 25px;
+    text-align: center;
+    padding: 20px;
+    color: #000000;;
+    background:#ff8000;
+    margin: 10px;
+}
+
+.WIDGETI1{
+    grid-area:WIDGETI1;
+    font-size: 25px;
+    text-align: center;
+    padding: 20px;
+    columns: #000000;;
+    background:#1793F4 ;
+    margin: 10px;
+}
+
+.WIDGETI {
+    grid-area:WIDGETI ;
+    font-size: 25px;
+    text-align: center;
+    padding: 20px;
+    columns: #000000;;
+    background:#1793F4 ;
+    margin: 10px;
+}
+
+FOOTER{
+    grid-area:FOOTER;
+    font-size: 25px;
+    padding: 20px;
+    color:#fff;
+    background:#0D2D51 ;
+    margin: 10px;
+}
